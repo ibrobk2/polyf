@@ -1,0 +1,30 @@
+{
+  "cli": {
+    "version": ">= 15.0.13",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "buildType": "apk",
+      "gradleCommand": ":app:assembleRelease",
+      "signingConfig": {
+        "keystore": "./path/to/your/keystore.jks",
+        "keystorePassword": "yourKeystorePassword",
+        "keyAlias": "yourKeyAlias",
+        "keyPassword": "yourKeyPassword"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
+

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.container{
+    height: 100%;
+    margin-top: 120px;
+}
+
+h2{
+    color: blue;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: inset black 1px 1px 6px 1px;
+    width: 300px;
+}
+
+button{
+    padding: 4px;
+    background-color: dodgerblue;
+    width: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
